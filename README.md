@@ -55,9 +55,12 @@
      //常量表
      public class CSht {
         //模块运行模式，调试\发布...
-        public static xyz.yhhit.OmnipotentTools.DataSheet.CSht.RUN_MODE_TYPE RUN_MODE= xyz.yhhit.OmnipotentTools.DataSheet.CSht.RUN_MODE;
+        public static RUN_MODE_TYPE RUN_MODE= RUN_MODE_TYPE.RELEASE;
         public static String NAME="模块名";
         public static String VERSION="模块版本号";//示例0.1
+        public enum RUN_MODE_TYPE{
+             DEBUG,RELEASE
+         }
      }
      ~~~
      
@@ -210,7 +213,7 @@ public class GraphicUI implements ItfUI {
 
 ##### 设置编译模式
 
-修改package xyz.yhhit.OmnipotentTools.DataSheet;下的CSht.java文件
+检查修改package xyz.yhhit.OmnipotentTools.DataSheet;下的CSht.java文件和你的插件目录下的CSht.java（**多个位置**），RUN_MODE应该为RELEASE。
 
 ~~~java
 public static RUN_MODE_TYPE RUN_MODE= RUN_MODE_TYPE.RELEASE;
