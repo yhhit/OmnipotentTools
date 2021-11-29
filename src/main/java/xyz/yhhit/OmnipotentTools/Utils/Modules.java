@@ -37,7 +37,7 @@ public class Modules {
     }
     public static String getModuleLocalName(String modName){
         try{
-            return (String)callModuleFn(modName,getModuleUIS(modName).get(0),"getLocalName");
+            return (String)callModuleFn(modName,getModuleDftUI(modName),"getLocalName");
         }catch (ClassNotFoundException | InvocationTargetException | NoSuchMethodException | IllegalAccessException | InstantiationException e){
             OLogger.logInfo("模块文件不完整，请重新安装模块！",e);
         }
@@ -45,11 +45,14 @@ public class Modules {
     }
     public static String getModuleVersion(String modName){
         try{
-            return (String)callModuleFn(modName,getModuleUIS(modName).get(0),"getVersion");
+            return (String)callModuleFn(modName,getModuleDftUI(modName),"getVersion");
         }catch (ClassNotFoundException | InvocationTargetException | NoSuchMethodException | IllegalAccessException | InstantiationException e){
             OLogger.logInfo("模块文件不完整，请重新安装模块！",e);
         }
         return modName;
+    }
+    public static String getModuleDftUI(String modName){
+        return getModuleUIS(modName).get(0);
     }
     public static ArrayList<String> getModuleUIS(String modName){
         File file=new File(VaSht.MODULES_PATH+File.separator+modName+File.separator+"UIS");

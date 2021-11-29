@@ -51,7 +51,10 @@ public class OLogger {
         myLogger.log(Level.INFO,str,e);
     }
     public static void logDebug(String str,Exception e){
-        System.out.println("DEBUG:"+str);
+        switch (CSht.RUN_MODE){
+            case DEBUG: System.out.println("DEBUG:"+str);break;
+            case RELEASE: ;break;
+        }
         myLogger.log(Level.FINEST,str,e);
     }
 }

@@ -48,7 +48,14 @@ public class ConsoleUI implements ItfUI {
                 int j=0;
                 for (String s:uis) {
                     ++j;
-                    System.out.print(j+"."+uis.get(j-1)+" ");
+                    String uiName=uis.get(j-1);
+                    i=0;
+                    if(uiName.equals(CSht.UI_TYPE_STR[i]))
+                        uiName=CSht.UI_TYPE_STR_CHINESE[i];
+                    else if(uiName.equals(CSht.UI_TYPE_STR[++i]))
+                        uiName=CSht.UI_TYPE_STR_CHINESE[i];
+
+                    System.out.print(j+"."+uiName+" ");
                 }
                 System.out.println(")");
             }
@@ -59,7 +66,7 @@ public class ConsoleUI implements ItfUI {
             try {
                 int choice=scanner.nextInt();
                 if(!(uiss.get(choice-1).size() >1)){
-                    startModules(VaSht.MODULES.get(choice-1),null);
+                    startModules(VaSht.MODULES.get(choice-1),getModuleDftUI(VaSht.MODULES.get(choice-1)));
                 }else{
                     System.out.println("请选择模块UI:");
                     ArrayList<String> uis= uiss.get(choice-1);

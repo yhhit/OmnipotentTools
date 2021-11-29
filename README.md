@@ -54,19 +54,15 @@
      ~~~java
      //常量表
      public class CSht {
-         //模块运行模式，调试\发布...
-         public static RUN_MODE_TYPE RUN_MODE= RUN_MODE_TYPE.DEBUG;
-         public static String NAME="模块名";
-         public static String VERSION="模块版本号";//示例0.1
-     
-         public enum RUN_MODE_TYPE{
-             DEBUG,RELEASE
-         }
+        //模块运行模式，调试\发布...
+        public static xyz.yhhit.OmnipotentTools.DataSheet.CSht.RUN_MODE_TYPE RUN_MODE= xyz.yhhit.OmnipotentTools.DataSheet.CSht.RUN_MODE;
+        public static String NAME="模块名";
+        public static String VERSION="模块版本号";//示例0.1
      }
      ~~~
-
+     
    * 复制以下代码到"VaSht.java"中
-
+   
      ~~~java
      public class VaSht {
          //ItfUI所在包全包名
@@ -75,9 +71,9 @@
          public static final String PATH= PACKAGE_NAME.replace(".", File.separator);
      }
      ~~~
-
+   
    * 复制以下代码到“ItfUI.java”中
-
+   
      ~~~java
      public interface ItfUI {
      
@@ -97,9 +93,9 @@
          public void onExit();
      }
      ~~~
-
+   
    * 复制以下代码到"ConsoleUI.java"中
-
+   
      ~~~java
      public class ConsoleUI implements ItfUI {
      
@@ -212,9 +208,21 @@ public class GraphicUI implements ItfUI {
 
 编译完成后，需要提取出模块文件。
 
-##### 模块提取方法
+##### 设置编译模式
+
+修改package xyz.yhhit.OmnipotentTools.DataSheet;下的CSht.java文件
+
+~~~java
+public static RUN_MODE_TYPE RUN_MODE= RUN_MODE_TYPE.RELEASE;
+~~~
+
+##### 编译并提取模块
+
+首先清理项目，编译项目。
 
 使用IDEA开发者，在项目路径"target\classes"目录下将所有文件全部压缩，发布即可。
+
+说明：目前工具箱还不支持联网功能，大家可以发布到本项目下，也可发布到自己的github上。
 
 ##### 部署模块
 

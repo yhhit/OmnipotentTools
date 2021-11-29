@@ -33,7 +33,7 @@ public class ConsoleUI implements ItfUI {
             try {
                 switch (scanner.nextInt()){
                     case 1:
-                        System.out.println("请依次输入：基酒酒精度(%)，加水质量(饮料/克)，配置后的酒精度（%）:");
+                        System.out.println("请依次输入:基酒酒精度(%)，加水质量(饮料/克)，配置后的酒精度（%）:");
                         basicLiquorsContent=scanner.nextDouble();
                         mixersMass[0]=scanner.nextDouble();
                         cocktailAlcoholContent=scanner.nextDouble();
@@ -42,13 +42,13 @@ public class ConsoleUI implements ItfUI {
                         System.out.println("需要加入基酒"+basicLiquorsMass[0]+"克。");
                         break;
                     case 2:
-                        System.out.println("请依次输入：请依次输入：基酒酒精度(%)，配置后的酒精度（%）,配置后的鸡尾酒质量(克):");
+                        System.out.println("请依次输入:基酒酒精度(%)，配置后的酒精度（%）,配置后的鸡尾酒质量(克):");
                         basicLiquorsContent=scanner.nextDouble();
                         cocktailAlcoholContent=scanner.nextDouble();
                         cocktailMass=scanner.nextDouble();
                         calcAmountOfBaseWineAndWatter(basicLiquorsContent, cocktailAlcoholContent,
                                 cocktailMass, mixersMass, basicLiquorsMass);
-                        System.out.println("需要加入基酒"+basicLiquorsMass[0]+"克,加水(饮料)"+mixersMass[0]+"克。");
+                        System.out.println("需要加入基酒"+ basicLiquorsMass[0]+"克,加水(饮料)"+mixersMass[0]+"克。");
                         break;
                     default:
                         logInfo("输入错误！请重新输入！",null);
