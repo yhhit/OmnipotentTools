@@ -13,7 +13,7 @@
 
 #### 下载release版本
 
-访问 https://github.com/yhhit/OmnipotentTools 在右边点击releases按钮下载最新的版本。
+访问 https://github.com/yhhit/OmnipotentTools/releases 点击 OmnipotentTools.zip 开始下载。
 
 #### 解压运行
 
