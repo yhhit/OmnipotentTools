@@ -6,8 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OmnipotentTools" />
+        <module name="ToolBox" />
+        <module name="BartendingCalculator" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BartendingCalculator" target="11" />
+      <module name="OmnipotentTools" target="11" />
+      <module name="ToolBox" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

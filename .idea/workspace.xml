@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e183916c-42c3-490d-aab1-a932a92d4ae8" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="21XHigDHx6z36eyKuRvSb8YutBW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ModuleTemplet" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules\BartendingCalculator" />
+      <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules" />
+      <recent name="D:\Document\github\OmnipotentTools\src\main\java\xyz\yhhit\OmnipotentTools\Modules\DatabaseDocGenerator" />
+      <recent name="D:\Document\github\OmnipotentTools\src\main\java\xyz\yhhit\OmnipotentTools\ModuleTemplet" />
+      <recent name="D:\Document\github\OmnipotentTools\src\main\java\xyz\yhhit\OmnipotentTools\modules\BartendingCalculator\UIS" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Document\github\OmnipotentTools\Modules" />
+      <recent name="D:\Document\github\OmnipotentTools\ToolBox" />
+      <recent name="D:\Document\github\OmnipotentTools\ToolBox\src" />
+      <recent name="D:\Document\github\OmnipotentTools\src\main\resources" />
+      <recent name="D:\Document\github\screw\OmnipotentTools\src\main\resources\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ConsoleUI(Tools)">
+    <configuration name="ConsoleUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS.ConsoleUI" />
+      <module name="BartendingCalculator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/target/classes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleUI(Tools)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.UIS.ConsoleUI" />
+      <module name="ToolBox" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/target/classes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.UIS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConsoleUI" />
+      <item itemvalue="Application.ConsoleUI(Tools)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConsoleUI(Tools)" />
+        <item itemvalue="Application.ConsoleUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e183916c-42c3-490d-aab1-a932a92d4ae8" name="Changes" comment="" />
+      <created>1638080642619</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638080642619</updated>
+      <workItem from="1638080645243" duration="998000" />
+      <workItem from="1638081665155" duration="1265000" />
+      <workItem from="1638082957802" duration="13431000" />
+      <workItem from="1638103896881" duration="1053000" />
+      <workItem from="1638104973736" duration="5609000" />
+      <workItem from="1638151642881" duration="22392000" />
+      <workItem from="1638176829761" duration="11578000" />
+      <workItem from="1638191074661" duration="520000" />
+      <workItem from="1638192837650" duration="2901000" />
+      <workItem from="1638236776299" duration="2514000" />
+      <workItem from="1638240133322" duration="4969000" />
+      <workItem from="1638245286192" duration="11034000" />
+      <workItem from="1638257169570" duration="83000" />
+      <workItem from="1638257273355" duration="5178000" />
+      <workItem from="1638265103106" duration="3070000" />
+      <workItem from="1638268215629" duration="49000" />
+      <workItem from="1638268331507" duration="10364000" />
+      <workItem from="1638282562870" duration="341000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/ZipUtils.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
