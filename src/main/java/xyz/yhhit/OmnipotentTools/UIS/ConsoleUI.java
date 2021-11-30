@@ -49,9 +49,14 @@ public class ConsoleUI implements ItfUI {
                 for (String s:uis) {
                     ++j;
                     String uiName=uis.get(j-1);
-                    System.out.print(j+"."+uiNameToChinese(uiName)+" ");
-                }
+                    i=0;
+                    if(uiName.equals(CSht.UI_TYPE_STR[i]))
+                        uiName=CSht.UI_TYPE_STR_CHINESE[i];
+                    else if(uiName.equals(CSht.UI_TYPE_STR[++i]))
+                        uiName=CSht.UI_TYPE_STR_CHINESE[i];
 
+                    System.out.print(j+"."+uiName+" ");
+                }
                 System.out.println(")");
             }
             System.out.println("q.退出");
@@ -68,9 +73,8 @@ public class ConsoleUI implements ItfUI {
                     int j=0;
                     for (String s:uis) {
                         ++j;
-                        System.out.print(j+"."+uiNameToChinese(uis.get(j-1)) +" ");
+                        System.out.print(j+"."+uis.get(j-1)+" ");
                     }
-                    System.out.println();
                     int choice2=scanner.nextInt();
                     startModules(VaSht.MODULES.get(choice-1), (String) uiss.get(choice-1).get(choice2-1));
 
@@ -90,13 +94,4 @@ public class ConsoleUI implements ItfUI {
 
 
     }
-    static String uiNameToChinese(String uiName){
-        int k=0;
-        if(uiName.equals(CSht.UI_TYPE_STR[k]))
-            uiName=CSht.UI_TYPE_STR_CHINESE[k];
-        else if(uiName.equals(CSht.UI_TYPE_STR[++k]))
-            uiName=CSht.UI_TYPE_STR_CHINESE[k];
-        return uiName;
-    }
-
 }

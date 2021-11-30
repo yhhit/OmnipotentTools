@@ -19,7 +19,7 @@ public class CSht {
         CONSOLE_UI,GRAPHIC_UI
     }
     public static final String[] UI_TYPE_STR={"ConsoleUI","GraphicUI"};
-    public static final String[] UI_TYPE_STR_CHINESE={"控制台界面","图形界面"};
+    public static final String[] UI_TYPE_STR_CHINESE={"控制台页面","图形页面"};
 
 
 }
