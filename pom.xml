@@ -11,6 +11,8 @@
     <modules>
         <module>ToolBox</module>
         <module>Modules/BartendingCalculator</module>
+        <module>Modules/ModuleTemplate</module>
+        <module>Modules/test</module>
     </modules>
 
     <properties>

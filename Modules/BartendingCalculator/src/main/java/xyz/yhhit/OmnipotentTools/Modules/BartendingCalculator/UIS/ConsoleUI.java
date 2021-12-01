@@ -28,7 +28,7 @@ public class ConsoleUI implements ItfUI {
     public void onShowUI(String[] args) {
         while(true){
             //显示界面
-            System.out.println("===========欢迎来到"+ CSht.NAME+ "===========");
+            System.out.println("===========欢迎来到"+ CSht.NAME+" V"+CSht.VERSION+"===========");
             System.out.println("1.计算加基酒的质量。");
             System.out.println("2.计算加水和酒的质量。");
             System.out.println("q.退出。");

@@ -4,7 +4,9 @@ import xyz.yhhit.OmnipotentTools.DataSheet.CSht;
 import xyz.yhhit.OmnipotentTools.DataSheet.VaSht;
 import xyz.yhhit.OmnipotentTools.ItfUI;
 import xyz.yhhit.OmnipotentTools.Utils.Modules;
+import xyz.yhhit.OmnipotentTools.Utils.OLogger;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -54,17 +56,17 @@ public class ConsoleUI implements ItfUI {
                 }
                 System.out.println(")");
             }
-            System.out.println("q.退出");
             System.out.println("i.安装模块");
             System.out.println("r.卸载模块");
-            System.out.println("c.清理所有依赖(新手请勿使用此项)");
+            System.out.println("c.清理所有依赖包(新手请勿使用此项)");
+            System.out.println("q.退出");
 
             //读取输入
             Scanner scanner = new Scanner(System.in);
             try {
                 int choice=scanner.nextInt();
                 if(!(uiss.get(choice-1).size() >1)){
-                    startModules(VaSht.MODULES.get(choice-1),getModuleDftUI(VaSht.MODULES.get(choice-1)));
+                    startModulesAndCheckDep(choice-1,getModuleDftUI(VaSht.MODULES.get(choice-1)));
                 }else{
                     System.out.println("请选择模块UI:");
                     ArrayList<String> uis= uiss.get(choice-1);
@@ -75,9 +77,7 @@ public class ConsoleUI implements ItfUI {
                     }
                     System.out.println();
                     int choice2=scanner.nextInt();
-                    startModules(VaSht.MODULES.get(choice-1), (String) uiss.get(choice-1).get(choice2-1));
-
-
+                    startModulesAndCheckDep(choice-1, (String) uiss.get(choice-1).get(choice2-1));
                 }
             }catch (InputMismatchException e){
                 String str=scanner.next();
@@ -87,11 +87,9 @@ public class ConsoleUI implements ItfUI {
                     case "i":
                         System.out.println("请输入模块安装包路径(可以直接拖动文件到此):");
                         try {
-
-                            Modules.installModule(scanner.next());
-                            System.out.println("安装成功！");
+                            String modName=Modules.installModule(scanner.next());
+                            System.out.println("安装\""+modName+"\"成功！");
                         } catch (Exception ex) {
-
                             logInfo("模块包错误！请重新下载！",ex);
                         }
                         ;break;
@@ -160,5 +158,24 @@ public class ConsoleUI implements ItfUI {
             uiName=CSht.UI_TYPE_STR_CHINESE[k];
         return uiName;
     }
-
+    //检查模块依赖并启动模块
+    static void startModulesAndCheckDep(int modOrd,String uiName) throws IOException {
+        String modName=VaSht.MODULES.get(modOrd);
+        try{
+            String[] notInstall=getModuleNotInstallDepName(VaSht.MODULES.get(modOrd));
+            if(notInstall.length>0){
+                System.out.println("该模块依赖于以下模块:");
+                for (String s:
+                        notInstall) {
+                    System.out.print(s+" ");
+                }
+                System.out.println("\n请先安装以上模块在试！");
+            }else
+                startModules(modName,uiName,null);
+        }catch (IOException e){
+            //依赖文件不存在或被占用
+        }catch (Exception e){
+            OLogger.logUnknown("未知错误",e);
+        }
+    }
 }

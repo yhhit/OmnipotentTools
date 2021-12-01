@@ -29,7 +29,7 @@ target/
 # logs
 log/
 
-!ModuleTemplet.zip
+!ModuleTemplate.zip
 
 # tem
 tem/

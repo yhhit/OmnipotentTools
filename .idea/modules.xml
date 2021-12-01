@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Modules/BartendingCalculator/BartendingCalculator.iml" filepath="$PROJECT_DIR$/Modules/BartendingCalculator/BartendingCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modules/ModuleTemplate/ModuleTemplate.iml" filepath="$PROJECT_DIR$/Modules/ModuleTemplate/ModuleTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/OmnipotentTools.iml" filepath="$PROJECT_DIR$/OmnipotentTools.iml" />
       <module fileurl="file://$PROJECT_DIR$/ToolBox/ToolBox.iml" filepath="$PROJECT_DIR$/ToolBox/ToolBox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modules/test/test.iml" filepath="$PROJECT_DIR$/Modules/test/test.iml" />
     </modules>
   </component>
 </project>

@@ -26,11 +26,11 @@ public class OLogger {
                 }
 
                 final int LOG_ROTATION_COUNT = 20;
-                File file=new File(VaSht.PATH+File.separator+"log");
+                File file=new File("log");
                 if(!file.exists()){//如果文件夹不存在
                     file.mkdir();//创建文件夹
                 }
-                Handler handler = new FileHandler(VaSht.PATH+File.separator+"log"+File.separator+"log%g.xml", 2*1024*1024, LOG_ROTATION_COUNT);//2MB
+                Handler handler = new FileHandler("log"+File.separator+"log%g.xml", 2*1024*1024, LOG_ROTATION_COUNT);//2MB
                 handler.setEncoding("utf-8");
                 handler.setLevel(Level.ALL);
                 myLogger.addHandler(handler);
@@ -42,22 +42,26 @@ public class OLogger {
         }
     }
     //用于记录导致程序崩溃信息
-    public static void logCrash(Exception e){
+    public static void logCrash(Throwable e){
         System.out.println("抱歉！程序出现了错误，即将终止运行，建议提交日志文件给开发者！");
         myLogger.log(Level.SEVERE,"程序崩溃",e);
         System.exit(CSht.EXIT_TYPE.ABORT.ordinal());
     }
     //用于记录可以显示给用户的信息
-    public static void logInfo(String str,Exception e){
+    public static void logInfo(String str,Throwable e){
         System.out.println(str);
         myLogger.log(Level.INFO,str,e);
     }
     //用于记录调试模式(RUN_MODE=DEBUG)时才输出显示的信息
-    public static void logDebug(String str,Exception e){
+    public static void logDebug(String str,Throwable e){
         switch (CSht.RUN_MODE){
             case DEBUG: System.out.println("DEBUG:"+str);break;
             case RELEASE: ;break;
         }
         myLogger.log(Level.FINEST,str,e);
+    }
+    //用于记录未知但不致命的错误信息
+    public static void logUnknown(String str,Throwable e){
+        myLogger.log(Level.SEVERE,str,e);
     }
 }

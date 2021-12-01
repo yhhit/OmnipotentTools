@@ -38,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ModuleTemplet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/test" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -46,21 +46,37 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\github\OmnipotentTools\Modules\test" />
+      <recent name="D:\Document\github\OmnipotentTools\Modules\ModuleTemplate\src\main\java\xyz\yhhit\OmnipotentTools\Modules\ModuleName" />
       <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules\BartendingCalculator" />
       <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules" />
       <recent name="D:\Document\github\OmnipotentTools\src\main\java\xyz\yhhit\OmnipotentTools\Modules\DatabaseDocGenerator" />
-      <recent name="D:\Document\github\OmnipotentTools\src\main\java\xyz\yhhit\OmnipotentTools\ModuleTemplet" />
-      <recent name="D:\Document\github\OmnipotentTools\src\main\java\xyz\yhhit\OmnipotentTools\modules\BartendingCalculator\UIS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules\BartendingCalculator" />
       <recent name="D:\Document\github\OmnipotentTools\Modules" />
       <recent name="D:\Document\github\OmnipotentTools\ToolBox" />
       <recent name="D:\Document\github\OmnipotentTools\ToolBox\src" />
       <recent name="D:\Document\github\OmnipotentTools\src\main\resources" />
-      <recent name="D:\Document\github\screw\OmnipotentTools\src\main\resources\lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ConsoleUI(Tools)">
+    <configuration name="ConsoleUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS.ConsoleUI" />
+      <module name="ModuleTemplate (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsoleUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS.ConsoleUI" />
       <module name="BartendingCalculator" />
@@ -103,11 +119,13 @@
     <list>
       <item itemvalue="Application.ConsoleUI" />
       <item itemvalue="Application.ConsoleUI(Tools)" />
+      <item itemvalue="Application.ConsoleUI (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConsoleUI(Tools)" />
         <item itemvalue="Application.ConsoleUI" />
+        <item itemvalue="Application.ConsoleUI (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +154,12 @@
       <workItem from="1638265103106" duration="3070000" />
       <workItem from="1638268215629" duration="49000" />
       <workItem from="1638268331507" duration="10364000" />
-      <workItem from="1638282562870" duration="341000" />
+      <workItem from="1638282562870" duration="582000" />
+      <workItem from="1638324915899" duration="22819000" />
+      <workItem from="1638352502450" duration="2309000" />
+      <workItem from="1638354973999" duration="1053000" />
+      <workItem from="1638356534273" duration="6059000" />
+      <workItem from="1638363423243" duration="1542000" />
     </task>
     <servers />
   </component>
@@ -157,40 +180,35 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/ZipUtils.java</url>
-          <line>109</line>
+          <line>115</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="19" />
+          <line>92</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="20" />
+          <line>142</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/temurin-11.0.13/lib/src.zip!/java.base/java/lang/Class.java</url>
+          <line>2107</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="22" />
+          <line>191</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.NoSuchMethodException" memberName="detailMessage" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -1,7 +1,7 @@
-package xyz.yhhit.OmnipotentTools.Utils;
+package xyz.yhhit.OmnipotentTools.Modules.ModuleName.Utils;
 
-import xyz.yhhit.OmnipotentTools.DataSheet.CSht;
-import xyz.yhhit.OmnipotentTools.DataSheet.VaSht;
+import xyz.yhhit.OmnipotentTools.Modules.ModuleName.DataSheet.CSht;
+import xyz.yhhit.OmnipotentTools.Modules.ModuleName.DataSheet.VaSht;
 
 import java.io.File;
 import java.io.IOException;

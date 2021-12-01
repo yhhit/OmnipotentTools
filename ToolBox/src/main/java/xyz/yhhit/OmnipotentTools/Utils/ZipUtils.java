@@ -1,6 +1,7 @@
 package xyz.yhhit.OmnipotentTools.Utils;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
@@ -13,10 +14,14 @@ public class ZipUtils {
      *
      * @param zipFilePath 带解压文件
      * @param desDirectory 解压到的目录
-     * @throws Exception
+     * @param ignoreFile 不解压的文件或路径(路径格式为 xxx/file 或 xxx/xxx/path/
+     * @tip ZipEntry.getName()获取到的路径 以“.本系统文件分隔符开头” 以/作为分隔符 路径以/结尾文件正常结尾
      */
-    public static void unzip(String zipFilePath, String desDirectory) throws Exception {
-
+    public static void unzip(String zipFilePath, String desDirectory,String[] ignoreFile) throws Exception {
+        //转换路径符合压缩包路径规则的正则表达式
+        for (int i = 0; i < ignoreFile.length; i++) {
+            ignoreFile[i]=StringUtil.doubleSlant("."+File.separator+StringUtil.slantToBackSlant(ignoreFile[i])+".*");
+        }
         File desDir = new File(desDirectory);
         if (!desDir.exists()) {
             boolean mkdirSuccess = desDir.mkdir();
@@ -29,26 +34,27 @@ public class ZipUtils {
         // 遍历每一个文件
         ZipEntry zipEntry = zipInputStream.getNextEntry();
         while (zipEntry != null) {
-            if (zipEntry.isDirectory()) { // 文件夹
-                String unzipFilePath = desDirectory + File.separator + zipEntry.getName();
-                // 直接创建
-                mkdir(new File(unzipFilePath));
-            } else { // 文件
-                String unzipFilePath = desDirectory + File.separator + zipEntry.getName();
-                File file = new File(unzipFilePath);
-                // 创建父目录
-                mkdir(file.getParentFile());
-                // 写出文件流
-                BufferedOutputStream bufferedOutputStream =
-                        new BufferedOutputStream(new FileOutputStream(unzipFilePath));
-                byte[] bytes = new byte[1024];
-                int readLen;
-                while ((readLen = zipInputStream.read(bytes)) != -1) {
-                    bufferedOutputStream.write(bytes, 0, readLen);
+            String unzipFilePath = desDirectory + File.separator + zipEntry.getName();
+            if(!ArrayUtil.isContainArrByRex(ignoreFile,unzipFilePath)){
+                if (zipEntry.isDirectory()) { // 文件夹
+                    // 直接创建
+                    mkdir(new File(unzipFilePath));
+                } else { // 文件
+                    File file = new File(unzipFilePath);
+                    // 创建父目录
+                    mkdir(file.getParentFile());
+                    // 写出文件流
+                    BufferedOutputStream bufferedOutputStream =
+                            new BufferedOutputStream(new FileOutputStream(unzipFilePath));
+                    byte[] bytes = new byte[1024];
+                    int readLen;
+                    while ((readLen = zipInputStream.read(bytes)) != -1) {
+                        bufferedOutputStream.write(bytes, 0, readLen);
+                    }
+                    bufferedOutputStream.close();
                 }
-                bufferedOutputStream.close();
+                zipInputStream.closeEntry();
             }
-            zipInputStream.closeEntry();
             zipEntry = zipInputStream.getNextEntry();
         }
         zipInputStream.close();

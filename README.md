@@ -43,7 +43,7 @@
 
 #### 下载、导入模板项目
 
-在  https://github.com/yhhit/OmnipotentTools/ 根目录直接下载 ModuleTemplet.zip 
+在  https://github.com/yhhit/OmnipotentTools/ 根目录直接下载 ModuleTemplate.zip 
 
 解压并导入项目，配置Maven(如不使用Maven也可不用配置)
 
@@ -57,8 +57,8 @@
 
 修改pom文件 artifactId 为模块名
 
-```
-<artifactId>ModuleTemplet</artifactId>
+```java
+<artifactId>ModuleTemplate</artifactId>
 ```
 
 修改 CSht.java 下的
@@ -150,10 +150,17 @@ Modules目录用于存放模块代码，ToolBox是主程序代码
 
 点击右上角运行按钮左边的运行配置框，点击 Edit Configurations 修改 working directory 与上面的编译生成目录一致。
 
+#### 注意事项
+
+##### 打包前先清理项目
+
+在使用完整开发环境开发时，编译的主程序文件和模块文件会混合在一起，如果直接打包会打包所有文件，所以应该先清理整个项目在打包模块。
+
 ## 开发计划
 
 * 近期计划
   * 多进程，线程支持
+  * 模块调用依赖支持
   * 下载模块
 * 总计划
 * 添加多国语言功能。
