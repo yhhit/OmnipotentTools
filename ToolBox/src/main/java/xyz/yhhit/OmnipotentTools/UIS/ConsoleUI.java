@@ -1,5 +1,6 @@
 package xyz.yhhit.OmnipotentTools.UIS;
 
+import jdk.jshell.execution.Util;
 import xyz.yhhit.OmnipotentTools.DataSheet.CSht;
 import xyz.yhhit.OmnipotentTools.DataSheet.VaSht;
 import xyz.yhhit.OmnipotentTools.ItfUI;
@@ -7,54 +8,69 @@ import xyz.yhhit.OmnipotentTools.Utils.Modules;
 import xyz.yhhit.OmnipotentTools.Utils.OLogger;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static xyz.yhhit.OmnipotentTools.Utils.Modules.*;
-import static xyz.yhhit.OmnipotentTools.Utils.OLogger.initialLogger;
-import static xyz.yhhit.OmnipotentTools.Utils.OLogger.logInfo;
+import static xyz.yhhit.OmnipotentTools.Utils.OLogger.*;
 
 public class ConsoleUI implements ItfUI {
     public static void main(String[] args) {
-        ItfUI omTl=new ConsoleUI();
+        VaSht.UI=new ConsoleUI();
         //启动UI界面
-        omTl.onCreate();
-        omTl.onShowUI(args);
-        omTl.onExit();
+        VaSht.UI.onCreate();
+        VaSht.UI.onShowUI(args);
+        VaSht.UI.onExit();
     }
     @Override
-    public void onCreate() {
+    public int onCreate() {
         //加载log
-        initialLogger();
+        initialLogger(CSht.RUN_MODE);
         //扫描所有模块
         scanModules();
+        return 0;
     }
 
     @Override
-    public void onExit() {
-
+    public int onExit() {
+        return 0;
     }
 
     @Override
-    public void onShowUI(String[] args) {
+    public int onShowUI(String[] args) {
         while(true){
+            String version=getVersion();
             //打印提示
-            System.out.println("===========欢迎来到鸿昊万能工具箱===========");
+            System.out.println("===========欢迎来到"+getLocalName()+(version!=null?(" V"+version):"")+"===========");
             System.out.println("请选择要启动的工具:");
             int i=0;
             ArrayList<ArrayList> uiss=new ArrayList<ArrayList>();
-            for(String name: VaSht.MODULES){
-                System.out.print(++i+"."+ getModuleLocalName(name)+" V"+getModuleVersion(name)+"( 支持的UI:");
-                ArrayList<String> uis=getModuleUIS(name);
-                uiss.add(uis);
-                int j=0;
-                for (String s:uis) {
-                    ++j;
-                    String uiName=uis.get(j-1);
-                    System.out.print(j+"."+uiNameToChinese(uiName)+" ");
+            for(String modName: VaSht.MODULES_NAME){
+                try{
+                    version=getModuleVersion(modName);
+                }catch (Exception |Error e){
+                    OLogger.logDebug("获取模块版本信息失败！",e);
+                    version=null;
                 }
-                System.out.println(")");
+                System.out.print(++i+"."+ getModulesShowName(modName)+(version!=null?(" V"+version):" 未知的版本"));
+                ArrayList<String> uis=getModuleUIS(modName);
+                uiss.add(uis);
+                if(getModuleType(modName)== CSht.MODULE_TYPE.MODULE){
+                    System.out.print("( 支持的UI:");
+                    int j=0;
+                    for (String s:uis) {
+                        ++j;
+                        String uiName=uis.get(j-1);
+                        System.out.print(j+"."+uiNameToChinese(uiName)+" ");
+                    }
+                    System.out.print(")");
+                }
+                System.out.println();
+
             }
             System.out.println("i.安装模块");
             System.out.println("r.卸载模块");
@@ -62,11 +78,14 @@ public class ConsoleUI implements ItfUI {
             System.out.println("q.退出");
 
             //读取输入
-            Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanner(getSystemInputStreamReader());
             try {
                 int choice=scanner.nextInt();
-                if(!(uiss.get(choice-1).size() >1)){
-                    startModulesAndCheckDep(choice-1,getModuleDftUI(VaSht.MODULES.get(choice-1)));
+                if(uiss.get(choice-1).size() <=1){
+                    if(VaSht.MODULES.get(VaSht.MODULES_NAME.get(choice-1)).equals(CSht.MODULE_TYPE.MODULE))
+                        startModulesAndCheckDep(choice - 1, getModuleDftUI(VaSht.MODULES_NAME.get(choice - 1)));
+                    else
+                        startModulesAndCheckDep(choice-1,null);
                 }else{
                     System.out.println("请选择模块UI:");
                     ArrayList<String> uis= uiss.get(choice-1);
@@ -83,7 +102,7 @@ public class ConsoleUI implements ItfUI {
                 String str=scanner.next();
                 String confirm;
                 switch (str){
-                    case "q":System.exit(CSht.EXIT_TYPE.NORMAL.ordinal());break;
+                    case "q":return 0;
                     case "i":
                         System.out.println("请输入模块安装包路径(可以直接拖动文件到此):");
                         try {
@@ -96,12 +115,12 @@ public class ConsoleUI implements ItfUI {
                     case "r":
                         try{
                             System.out.println("请输入模块序号:");
-                            int mdOd=scanner.nextInt()-1;
+                            int modOrd=scanner.nextInt()-1;
                             while(true) {
-                                System.out.println("您确定要卸载\"" +getModuleLocalName(VaSht.MODULES.get(mdOd)) + "\"吗?(yes/no)");
+                                System.out.println("您确定要卸载\"" +getModulesShowName(VaSht.MODULES_NAME.get(modOrd)) + "\"吗?(yes/no)");
                                 if ((confirm = scanner.next()).equals("yes")) {
                                     try {
-                                        Modules.removeModule(mdOd);
+                                        Modules.removeModule(modOrd);
                                         System.out.println("卸载成功！");
                                     } catch (Exception ex) {
                                         logInfo("卸载模块失败，模块被占用！", ex);
@@ -148,21 +167,32 @@ public class ConsoleUI implements ItfUI {
 
         }
 
+    }
 
+    public String setModuleShowName(String modName){
+        Scanner scanner = new Scanner(getSystemInputStreamReader());
+        System.out.println("请为该模块设置显示名称:");
+        String showName=scanner.next();
+        try {
+            Modules.setModuleShowName(modName,showName);
+        } catch (IOException e) {
+            logDebug("",e);
+        }
+        return showName==null?modName:showName;
     }
     static String uiNameToChinese(String uiName){
         int k=0;
-        if(uiName.equals(CSht.UI_TYPE_STR[k]))
-            uiName=CSht.UI_TYPE_STR_CHINESE[k];
-        else if(uiName.equals(CSht.UI_TYPE_STR[++k]))
-            uiName=CSht.UI_TYPE_STR_CHINESE[k];
+        if(uiName.equals(ItfUI.UI_TYPE_STR[k]))
+            uiName=ItfUI.UI_TYPE_STR_CHINESE[k];
+        else if(uiName.equals(ItfUI.UI_TYPE_STR[++k]))
+            uiName=ItfUI.UI_TYPE_STR_CHINESE[k];
         return uiName;
     }
     //检查模块依赖并启动模块
-    static void startModulesAndCheckDep(int modOrd,String uiName) throws IOException {
-        String modName=VaSht.MODULES.get(modOrd);
+    static void startModulesAndCheckDep(int modOrd,String uiName) throws Exception {
+        String modName=VaSht.MODULES_NAME.get(modOrd);
         try{
-            String[] notInstall=getModuleNotInstallDepName(VaSht.MODULES.get(modOrd));
+            String[] notInstall=getModuleNotInstallDepName(VaSht.MODULES_NAME.get(modOrd));
             if(notInstall.length>0){
                 System.out.println("该模块依赖于以下模块:");
                 for (String s:
@@ -173,9 +203,17 @@ public class ConsoleUI implements ItfUI {
             }else
                 startModules(modName,uiName,null);
         }catch (IOException e){
-            //依赖文件不存在或被占用
+            OLogger.logUnknown("依赖文件不存在!",e);
+            startModules(modName,uiName,null);
         }catch (Exception e){
             OLogger.logUnknown("未知错误",e);
         }
+    }
+    static InputStreamReader getSystemInputStreamReader(){
+        return new InputStreamReader(System.in, Charset.forName(VaSht.SYSTEM_IN_CHARSET));
+    }
+    @Override
+    public UI_TYPE getUIType(){
+        return UI_TYPE.CONSOLE_UI;
     }
 }

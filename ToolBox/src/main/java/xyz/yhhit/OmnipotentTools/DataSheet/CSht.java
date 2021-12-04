@@ -1,26 +1,21 @@
 package xyz.yhhit.OmnipotentTools.DataSheet;
 
 
+import xyz.yhhit.OmnipotentTools.Utils.OLogger;
+
 //常量表
 public class CSht {
-    //程序运行模式，调试\发布...
-    public static RUN_MODE_TYPE RUN_MODE=RUN_MODE_TYPE.RELEASE;
     public static String NAME="鸿昊万能工具箱";
-    public static String VERSION="0.1.4";
-
-
-    public enum RUN_MODE_TYPE{
-        DEBUG,RELEASE
-    }
+    public static String VERSION="0.1.5";
+    public static String FILE_CHARSET="UTF-8";
+    //程序运行模式，调试\发布...
+    public static OLogger.RUN_MODE_TYPE RUN_MODE = OLogger.RUN_MODE_TYPE.RELEASE;
     public enum EXIT_TYPE{
         NORMAL,ABORT
     }
-    public enum UI_TYPE{
-        CONSOLE_UI,GRAPHIC_UI
+    public static final String META_DATA_FILE_NAME = "meta.properties";
+
+    public enum MODULE_TYPE{
+        MODULE,JAR,UNKNOWN_JAR
     }
-    public static final String[] UI_TYPE_STR={"ConsoleUI","GraphicUI"};
-    public static final String[] UI_TYPE_STR_CHINESE={"控制台界面","图形界面"};
-    public static final String MetaDataFileName = "meta.properties";
-
-
 }

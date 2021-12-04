@@ -5,12 +5,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>xyz.yhhit.xyz</groupId>
-    <artifactId>BartendingCalculator</artifactId>
-    <version>1.0.2</version>
+    <artifactId>test2</artifactId>
+    <version>1.0.1</version>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <encoding>utf-8</encoding>
     </properties>
     <build>
         <plugins>

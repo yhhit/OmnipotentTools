@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6ff7e4d-a2da-4a3e-8d08-58e921d4c69a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/Utils/Modules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BartendingCalculator/BartendingCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/ItfUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/ItfUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/UIS/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/UIS/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/meta.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModuleTemplate.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModuleTemplate.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/CSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/VaSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/ItfUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/ItfUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/Utils/OLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/meta.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/CSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/VaSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/ItfUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/ConsoleUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/GD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/Utils/OLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/meta.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OmnipotentTools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToolBox/ToolBox.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/CSht.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/CSht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/VaSht.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/VaSht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/ItfUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/ItfUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/OLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/OLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="21djxtBVChRsvJLSR7m2Wt0JTRF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ConsoleUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS.ConsoleUI" />
+      <module name="ModuleTemplet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ModuleTemplet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ModuleTemplet" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConsoleUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6ff7e4d-a2da-4a3e-8d08-58e921d4c69a" name="Changes" comment="" />
+      <created>1638278109243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638278109243</updated>
+      <workItem from="1638278110505" duration="3728000" />
+      <workItem from="1638282055843" duration="81000" />
+      <workItem from="1638536446303" duration="103000" />
+      <workItem from="1638536567514" duration="248000" />
+      <workItem from="1638536838906" duration="96000" />
+      <workItem from="1638536959247" duration="316000" />
+      <workItem from="1638537299862" duration="71000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

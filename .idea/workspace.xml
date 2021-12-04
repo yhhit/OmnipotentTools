@@ -4,7 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e183916c-42c3-490d-aab1-a932a92d4ae8" name="Changes" comment="" />
+    <list default="true" id="5a2e101d-66a8-4d6c-969f-b2782a113fae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/Utils/Modules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModuleTemplate.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/BartendingCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BartendingCalculator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/DataSheet/CSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/DataSheet/VaSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/ItfUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/ItfUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/UIS/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/UIS/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/Utils/OLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BartendingCalculator/src/main/java/xyz/yhhit/OmnipotentTools/Modules/BartendingCalculator/meta.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ModuleTemplate/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ModuleTemplate/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ModuleTemplate/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/ModuleTemplate.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/CSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/VaSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/ItfUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/ItfUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/Utils/OLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/meta.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ModuleTemplate/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/meta.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/CSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/DataSheet/VaSht.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/ItfUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/ConsoleUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/UIS/GD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/Utils/OLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/src/main/java/xyz/yhhit/OmnipotentTools/Modules/ModuleName/meta.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OmnipotentTools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolBox/ToolBox.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/CSht.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/CSht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/VaSht.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/DataSheet/VaSht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/ItfUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/ItfUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/OLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/OLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +64,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,16 +71,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+  <component name="ProjectId" id="21mDO20bIMwUy6wSjTXuV2jtj78" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectId" id="21XHigDHx6z36eyKuRvSb8YutBW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -38,38 +82,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/test" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Document\github\OmnipotentTools\Modules\test" />
-      <recent name="D:\Document\github\OmnipotentTools\Modules\ModuleTemplate\src\main\java\xyz\yhhit\OmnipotentTools\Modules\ModuleName" />
-      <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules\BartendingCalculator" />
-      <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules" />
-      <recent name="D:\Document\github\OmnipotentTools\src\main\java\xyz\yhhit\OmnipotentTools\Modules\DatabaseDocGenerator" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Document\github\OmnipotentTools\Modules\BartendingCalculator\src\main\java\xyz\yhhit\OmnipotentTools\Modules\BartendingCalculator" />
-      <recent name="D:\Document\github\OmnipotentTools\Modules" />
-      <recent name="D:\Document\github\OmnipotentTools\ToolBox" />
-      <recent name="D:\Document\github\OmnipotentTools\ToolBox\src" />
-      <recent name="D:\Document\github\OmnipotentTools\src\main\resources" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS" />
+      <recent name="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.Utils" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ConsoleUI(Tools)">
     <configuration name="ConsoleUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS.ConsoleUI" />
-      <module name="ModuleTemplate (1)" />
+      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS.ConsoleUI" />
+      <module name="BartendingCalculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS.*" />
+          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +105,12 @@
       </method>
     </configuration>
     <configuration name="ConsoleUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS.ConsoleUI" />
-      <module name="BartendingCalculator" />
+      <option name="MAIN_CLASS_NAME" value="xyz.yhhit.OmnipotentTools.UIS.ConsoleUI" />
+      <module name="ToolBox" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/target/classes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS.*" />
+          <option name="PATTERN" value="xyz.yhhit.OmnipotentTools.UIS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,17 +132,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.ConsoleUI" />
       <item itemvalue="Application.ConsoleUI(Tools)" />
@@ -124,91 +140,92 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConsoleUI(Tools)" />
-        <item itemvalue="Application.ConsoleUI" />
         <item itemvalue="Application.ConsoleUI (1)" />
+        <item itemvalue="Application.ConsoleUI(Tools)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e183916c-42c3-490d-aab1-a932a92d4ae8" name="Changes" comment="" />
-      <created>1638080642619</created>
+      <changelist id="5a2e101d-66a8-4d6c-969f-b2782a113fae" name="Changes" comment="" />
+      <created>1638537335347</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1638080642619</updated>
-      <workItem from="1638080645243" duration="998000" />
-      <workItem from="1638081665155" duration="1265000" />
-      <workItem from="1638082957802" duration="13431000" />
-      <workItem from="1638103896881" duration="1053000" />
-      <workItem from="1638104973736" duration="5609000" />
-      <workItem from="1638151642881" duration="22392000" />
-      <workItem from="1638176829761" duration="11578000" />
-      <workItem from="1638191074661" duration="520000" />
-      <workItem from="1638192837650" duration="2901000" />
-      <workItem from="1638236776299" duration="2514000" />
-      <workItem from="1638240133322" duration="4969000" />
-      <workItem from="1638245286192" duration="11034000" />
-      <workItem from="1638257169570" duration="83000" />
-      <workItem from="1638257273355" duration="5178000" />
-      <workItem from="1638265103106" duration="3070000" />
-      <workItem from="1638268215629" duration="49000" />
-      <workItem from="1638268331507" duration="10364000" />
-      <workItem from="1638282562870" duration="582000" />
-      <workItem from="1638324915899" duration="22819000" />
-      <workItem from="1638352502450" duration="2309000" />
-      <workItem from="1638354973999" duration="1053000" />
-      <workItem from="1638356534273" duration="6059000" />
-      <workItem from="1638363423243" duration="1542000" />
+      <updated>1638537335347</updated>
+      <workItem from="1638537338642" duration="61000" />
+      <workItem from="1638538172771" duration="39524000" />
+      <workItem from="1638594894508" duration="8029000" />
+      <workItem from="1638603066739" duration="443000" />
+      <workItem from="1638603556769" duration="132000" />
+      <workItem from="1638603979228" duration="704000" />
+      <workItem from="1638605240413" duration="1799000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-    </ignored-roots>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/ZipUtils.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="30" />
+          <line>131</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.jdks/temurin-11.0.13/lib/src.zip!/java.base/java/lang/Class.java</url>
-          <line>2107</line>
-          <option name="timeStamp" value="56" />
+          <line>96</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
-          <line>191</line>
-          <option name="timeStamp" value="61" />
+          <line>443</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
+          <line>432</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/Utils/Modules.java</url>
+          <line>317</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ToolBox/src/main/java/xyz/yhhit/OmnipotentTools/UIS/ConsoleUI.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="java.lang.NoSuchMethodException" memberName="detailMessage" />
-      </pinned-members>
-    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

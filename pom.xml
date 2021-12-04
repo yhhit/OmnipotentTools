@@ -12,7 +12,7 @@
         <module>ToolBox</module>
         <module>Modules/BartendingCalculator</module>
         <module>Modules/ModuleTemplate</module>
-        <module>Modules/test</module>
+        <module>Modules/test2</module>
     </modules>
 
     <properties>

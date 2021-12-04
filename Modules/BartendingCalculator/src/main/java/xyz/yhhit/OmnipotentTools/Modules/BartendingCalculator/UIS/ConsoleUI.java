@@ -1,14 +1,9 @@
 package xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.UIS;
 
-import xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.DataSheet.CSht;
 import xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.ItfUI;
-
-import java.lang.reflect.InvocationTargetException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.Utils.OLogger.initialLogger;
-import static xyz.yhhit.OmnipotentTools.Modules.BartendingCalculator.Utils.OLogger.logInfo;
 
 
 public class ConsoleUI implements ItfUI {
@@ -20,26 +15,27 @@ public class ConsoleUI implements ItfUI {
         ui.onExit();
     }
     @Override
-    public void onCreate() {
-        initialLogger();
+    public int onCreate() {
+        return 0;
     }
 
     @Override
-    public void onShowUI(String[] args) {
+    public int onShowUI(String[] args) {
         while(true){
+            String version=getVersion();
             //显示界面
-            System.out.println("===========欢迎来到"+ CSht.NAME+" V"+CSht.VERSION+"===========");
+            System.out.println("===========欢迎来到"+ getLocalName()+(version!=null?(" V"+version):"")+"===========");
             System.out.println("1.计算加基酒的质量。");
             System.out.println("2.计算加水和酒的质量。");
             System.out.println("q.退出。");
             //读取输入
             Scanner scanner = new Scanner(System.in);
 
-            double basicLiquorsContent=0;
-            double cocktailAlcoholContent=0;
-            double cocktailMass=0;
-            double[] basicLiquorsMass= new double[1];
-            double[] mixersMass= new double[1];
+            Double basicLiquorsContent=0.0;
+            Double cocktailAlcoholContent=0.0;
+            Double cocktailMass=0.0;
+            Double[] basicLiquorsMass= new Double[1];
+            Double[] mixersMass= new Double[1];
             try {
                 switch (scanner.nextInt()){
                     case 1:
@@ -61,27 +57,30 @@ public class ConsoleUI implements ItfUI {
                         System.out.println("需要加入基酒"+ basicLiquorsMass[0]+"克,加水(饮料)"+mixersMass[0]+"克。");
                         break;
                     default:
-                        logInfo("输入错误！请重新输入！",null);
+                        System.out.println("输入错误！请重新输入！");
                         scanner.nextLine();
                 }
             }catch (InputMismatchException e){
                 if(scanner.next().equals("q"))
-                    return;
+                    return 0;
                 else{
-                    logInfo("输入错误！请重新输入！",e);
+                    System.out.println("输入错误！请重新输入！");
                     scanner.nextLine();
                 }
             }
             catch (Exception e) {
-                logInfo("输入错误！请重新输入！",e);
+                System.out.println("输入错误！请重新输入！");
                 scanner.nextLine();
             }
         }
     }
 
     @Override
-    public void onExit() {
-
+    public int onExit() {
+        return 0;
     }
-
+    @Override
+    public UI_TYPE getUIType(){
+        return UI_TYPE.CONSOLE_UI;
+    }
 }

@@ -1,16 +1,11 @@
 package xyz.yhhit.OmnipotentTools.Modules.ModuleName.UIS;
 
-import xyz.yhhit.OmnipotentTools.Modules.ModuleName.DataSheet.CSht;
 import xyz.yhhit.OmnipotentTools.Modules.ModuleName.ItfUI;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static xyz.yhhit.OmnipotentTools.Modules.ModuleName.Utils.OLogger.initialLogger;
-import static xyz.yhhit.OmnipotentTools.Modules.ModuleName.Utils.OLogger.logInfo;
-
-
 public class ConsoleUI implements ItfUI {
+
     //测试入口
     public static void main(String[] args) {
         ItfUI ui=new ConsoleUI();
@@ -19,15 +14,21 @@ public class ConsoleUI implements ItfUI {
         ui.onExit();
     }
     @Override
-    public void onCreate() {
-        initialLogger();
+    public UI_TYPE getUIType(){
+        return UI_TYPE.CONSOLE_UI;
     }
 
     @Override
-    public void onShowUI(String[] args) {
+    public int onCreate() {
+        return 0;
+    }
+
+    @Override
+    public int onShowUI(String[] args) {
         while(true){
+            String version=getVersion();
             //显示界面
-            System.out.println("===========欢迎来到"+ CSht.NAME+" V"+CSht.VERSION+"===========");
+            System.out.println("===========欢迎来到"+ getLocalName()+(version!=null?(" V"+version):"")+"===========");
             System.out.println("1.xxx。");
             System.out.println("2.xxx。");
             System.out.println("q.退出。");
@@ -41,27 +42,28 @@ public class ConsoleUI implements ItfUI {
                     case 2:
                         break;
                     default:
-                        logInfo("输入错误！请重新输入！",null);
+                        System.out.println("输入错误！请重新输入！");
                         scanner.nextLine();
                 }
             }catch (InputMismatchException e){
                 if(scanner.next().equals("q"))
-                    return;
+                    return 0;
                 else{
-                    logInfo("输入错误！请重新输入！",e);
+                    System.out.println("输入错误！请重新输入！");
                     scanner.nextLine();
                 }
             }
             catch (Exception e) {
-                logInfo("输入错误！请重新输入！",e);
+                System.out.println("输入错误！请重新输入！");
                 scanner.nextLine();
             }
         }
     }
 
     @Override
-    public void onExit() {
-
+    public int onExit() {
+        return 0;
     }
+
 
 }
