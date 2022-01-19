@@ -1,3 +1,3 @@
 @echo off
-set classpath=%cd%/jdk/bin;%classpath%;
+set path=%cd%/jdk/bin;%path%;
 java xyz.yhhit.OmnipotentTools.UIS.ConsoleUI
